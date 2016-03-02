@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Agenda ACME</title>
+		<meta charset="utf-8"> 
+	</head>
+	<body>
+		
+		<table border="1">
+			<caption> <!-- Esta etiqueta es opcional -->
+					<h3>Agenda ACME</h3>
+			</caption>
+			<thead> <!-- Dentro de la tabla colocamos las columnas y sus nombres -->
+				<tr>
+					<th>Salario</th> <!-- esta región no se combina con la de arriba por eso la dejamos vacía -->
+					<th>Nombre</th>
+					<th>Cargo</th>
+					<th>Teléfono</th>
+					<th>E-Mail:</th>
+				</tr>
+			</thead>
+			
+			<tbody>
+				<tr> <!-- El atributo col espan expande las columnas y siempre va en la th le indicamos la cantidad de col que ha de ocupar, si no le decimos nada, por defecto ocupa 1, si queremos que ocupe más hemos de cambiar este valor -->
+					<th rowspan="6">100000</th>
+					<th colspan="4">Actores principales<br><br></th> 
+				</tr>
+				<tr> <!-- Dentro de las filas y los contenidos en el mismo orden -->
+					<td>Corre Caminos</td>
+					<td>Freelance</td>
+					<td>000000001</td>
+					<td>veloz@atrapa.me</td>
+				</tr>
+				
+				<tr> <!-- Cambiamos el contenido de cada persona de la agenda -->
+					<td>Coyote</td>
+					<td>Funcionario</td>
+					<td>100000000</td>
+					<td>coyote@tepillo.ministerio</td>
+				</tr>
+				
+				<tr> <!-- Ahora colocamos un segundo encabezamiento para el resto de contactos -->
+					<th colspan="4">Extras<br><br></th> 
+				</tr>
+				<tr> 
+					<td>Uno Que Pasaba</td>
+					<td>Espectador</td>
+					<td>000000011</td>
+					<td>teveo@est.oy</td>
+				</tr>
+				<tr> <!-- <br><br> lo hemos añadido para darle un poco más de espacio, aunque la apariencia la podemos mejorar con css  -->
+					<td>Otro Que Pasa</td>
+					<td>Espectador</td>
+					<td>000000111</td>
+					<td>temiro@est.oy</td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</body>
+</html>
+
