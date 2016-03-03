@@ -1,78 +1,96 @@
 <!DOCTYPE HTML>
 <html>
 	<head></head>
-<!DOCTYPE HTML>
-<html>
-	<head></head>
 		<title>Formulario contacto</title>
 		<meta charset="utf-8"> 
 	</head>
 	<body>
-	<form method="post" action="http://forms.melodysoft.com">
+	<form method="post" action="http://forms.melodysoft.com" accept-charset="windows-1252">
 	
-		<input type="hidden" name="id" value="dfura_curso1">
-		
+			<input type="hidden" name="id" value="dfura_curso1">
+			<fieldset>
+				<legend>Datos de contacto</legend>
+			<p>
+				<label for="id_Nombre">
+					Nombre:
+				</label>
+					<input type="text" name="campo_Nombre" placeholder="pon aquí tu nombre" id="id_Nombre" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_Apellidos">
+					Apellidos:
+				</label>
+					<input type="text" name="campo_Apellidos" placeholder="pon aquí tus apellidos" id="id_Apellidos" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_Dirección">
+					Dirección:
+				</label>
+					<input type="text" name="campo_Direccion" placeholder="pon aquí tus Dirección" id="id_Direccion" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_CP">
+					CP:
+				</label>
+					<input type="text" name="campo_CP" placeholder="pon aquí tu Código Postal" id="id_CP" required maxlength="5">
+			 </p>
+			 
+			 <p>
+				<label for="id_Población">
+					Población:
+				</label>
+					<input type="text" name="campo_Poblacion" placeholder="pon aquí tu Población" id="id_Poblacion" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_Provincia">
+					Provincia:
+				</label>
+					<input type="text" name="campo_Provincia" placeholder="pon aquí tu Provincia" id="id_Provincia" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_Telefono">
+					Teléfono:
+				</label>
+					<input type="text" name="campo_Telefono" placeholder="pon aquí tus Teléfono" id="id_Telefono" required maxlength="9">
+			 </p>
+			 
+			 <p>
+				<label for="id_email">
+					E-mail:
+				</label> <!-- colocamos la etiqueta type=email nueva HTML5 -->
+					<input type="email" name="campo_email" placeholder="pon aquí tu email" id="id_email" required maxlength="50">
+			 </p>
+			 
+			 <p>
+				<label for="id_password">
+					Contraseña:
+				</label>
+					<input type="password" name="campo_password" placeholder="pon aquí tu contraseña" id="id_password" required maxlength="50">
+			 </p>
+			</fieldset>
+			
+			<fieldset>
+				<legend>Encuesta</legend>
+				<p> Género:
+					<input type="radio"name="campo_Genero" value="M" id="id_mujer">
+					<label for="id_mujer">Mujer</label>
+					<input type="radio"name="campo_Genero" value="H" id="id_hombre">
+					<label for="id_hombre">Hombre</label>	
+				</p>
+				
+			</fieldset>
+			
+			
 		<p>
-			<label for="id_Nombre">
-				Nombre:
-			</label>
-				<input type="text" name="campo_Nombre" placeholder="pon aquí tu nombre" id="id_Nombre" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_Apellidos">
-				Apellidos:
-			</label>
-				<input type="text" name="campo_Apellidos" placeholder="pon aquí tus apellidos" id="id_Apellidos" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_Dirección">
-				Dirección:
-			</label>
-				<input type="text" name="campo_Direccion" placeholder="pon aquí tus Dirección" id="id_Direccion" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_CP">
-				CP:
-			</label>
-				<input type="text" name="campo_CP" placeholder="pon aquí tu Código Postal" id="id_CP" required maxlength="5">
-		 </p>
-		 
-		 <p>
-			<label for="id_Población">
-				Población:
-			</label>
-				<input type="text" name="campo_Poblacion" placeholder="pon aquí tu Población" id="id_Poblacion" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_Provincia">
-				Provincia:
-			</label>
-				<input type="text" name="campo_Provincia" placeholder="pon aquí tu Provincia" id="id_Provincia" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_Telefono">
-				Teléfono:
-			</label>
-				<input type="text" name="campo_Telefono" placeholder="pon aquí tus Teléfono" id="id_Telefono" required maxlength="9">
-		 </p>
-		 
-		 <p>
-			<label for="id_email">
-				E-mail:
-			</label>
-				<input type="text" name="campo_email" placeholder="pon aquí tu email" id="id_email" required maxlength="50">
-		 </p>
-		 
-		 <p>
-			<label for="id_password">
-				Contraseña:
-			</label>
-				<input type="text" name="campo_password" placeholder="pon aquí tu contraseña" id="id_password" required maxlength="50">
-		 </p>
+			<input type="submit" value="Enviar"></p>
 		
-		<p><input type="submit" value="Enviar"></p>
+
+
+</form>
+	</body>
+</html>
