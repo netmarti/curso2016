@@ -5,12 +5,20 @@
 		<meta charset="utf-8"> 
 	</head>
 	<body>
+				<!-- DATOS PARA ENVIOS A MELODYSOFT nos piden que el método sea post y que se incluya un input en el que indicamos nuestro código de usuarios de su servicio. -->
+			
+			
 	<form method="post" action="http://forms.melodysoft.com" accept-charset="windows-1252">
 	
+				<!-- input con los atributos type y name son los atributos mínimos de la etiqueta para introducir los datos en el formulario -->
 			<input type="hidden" name="id" value="dfura_curso1">
+			
 			<fieldset>
 				<legend>Datos de contacto</legend>
-			<p>
+			
+			<p>	
+				<!-- marcamos el texto Nombre con una etiqueta para significar que el texto Nombre es un rótulo del input que vamos a realizar a continuación. Para mantener la relación de esta etiqueta con el input utilizamos el identificador id, que ya lo habímos usado con los enlaces. Sirve para identificar una etiqueta. Id debe: utilizar alfabeto anglosajón, no espacios ni mayúsculas, en cada documento debe ser único-->
+			
 				<label for="id_Nombre">
 					Nombre:
 				</label>
@@ -50,11 +58,14 @@
 					Provincia:
 				</label>
 				
-				<!-- comentamos esta porción de código porque vamos a colocar un desplegable con la lista de provincias
+					<!-- comentamos esta porción de código porque vamos a colocar un desplegable con la lista de provincias
 				
 					<input type="text" name="campo_Provincia" placeholder="pon aquí tu Provincia" id="id_Provincia" required maxlength="50"> -->
 					
-					<select name="campo_Provincia" id="id_Provincia" required> <!-- es como una lista pero con option -->
+					<select name="campo_Provincia" id="id_Provincia" required> 
+					<!-- si queremos mostrar al usuario un valor preestablecido usaremos el value -->
+					<!-- es como una lista pero con option -->
+					
 						<option value="">Selecciona provincia</option>
 						 <option value='alava'>Álava</option>
 						 <option value='albacete'>Albacete</option>
@@ -122,7 +133,9 @@
 			 <p>
 				<label for="id_email">
 					E-mail:
-				</label> <!-- colocamos la etiqueta type=email nueva HTML5 -->
+				</label> 
+				
+					<!-- colocamos la etiqueta type=email nueva HTML5 -->
 					<input type="email" name="campo_email" placeholder="pon aquí tu email" id="id_email" required maxlength="50">
 			 </p>
 			 
@@ -138,6 +151,7 @@
 				<legend>Encuesta</legend>
 				<p> Género:
 					<br><!-- colocamos el atributo checked si queremos dejar uno marcado por defecto -->
+					
 					<input type="radio" name="campo_Genero" value="M" id="id_mujer">
 					<label for="id_mujer">Mujer</label>
 					<br>
@@ -167,11 +181,11 @@
 				</p>
 				
 			</fieldset>
-		<p>Comentario:
-				<br>
+			<p>Comentario:
+				<br> <!-- tiene apertura y cierre porque se pueden colocar más etiquetas de HTML -->
 				<textarea name="campo_comentarios" id="id_Comentarios" maxlength="250">
 				</textarea>
-			</p>	
+			</p>
 			
 		<p>
 			<input type="submit" value="Enviar"></p>
