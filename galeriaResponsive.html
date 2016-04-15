@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Tabla con JS</title>
+		<meta charset="utf-8">
+		<style>
+			.galeria {
+				width:100%;
+				table-layout:fixed;
+				border-spacing:15px;
+			}
+			
+			.galeria img {
+				width:100%;
+				height:auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+	
+	
+	<script>
+	
+		var celdas = 20; // pon el número de celdas
+		var columnas = 5; // por el número de columnas
+		
+	
+		document.write("<table class = \"galeria\">");
+			document.write("<tr>");
+			for (var td = 1; td <= celdas; td++){
+				document.write("<td><img src=\"imgs/natura"+td+".jpg\" alt=\"naturaleza "+td+"\"></td>");
+				if ( td % columnas == 0 && td < celdas ) {
+					document.write("</tr><tr>");		
+				}		
+			}
+			document.write("</tr>");
+		
+		document.write("</table>");
+		
+	</script>
+	
+	
+
+	   
+	
+	</body>
+</html>
