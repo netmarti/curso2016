@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		
+		<title>Tabla con JS</title>
+		<meta charset="utf-8">
+	</head>
+	
+	<body>
+	
+	
+	<script>
+	
+		var celdas = 100; // pon el número de celdas
+		var columnas = 10; // por el número de columnas
+		
+	
+		document.write("<table border = \"1\">");
+			document.write("<tr>");
+			for (var td = 1; td <= celdas; td++){
+				document.write("<td>"+td+"</td>");
+				if ( td % columnas == 0 && td < celdas ) {
+					document.write("</tr><tr>");		
+				}		
+			}
+			document.write("</tr>");
+		
+		document.write("</table>");
+		
+	</script>
+	
+	
+
+	   
+	
+	</body>
+</html>
