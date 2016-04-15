@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>EJEMPLO de JS: bucles 03</title>
+		<meta charset="utf-8"> 
+		<style>
+		body {font-family:verdana;}
+			.verde {color:#0c0;}
+			.rojo {color:#c00;}
+		
+		</style>
+		<script>
+			
+			var usuario, contrasena, acceso;
+			
+
+			do {
+				usuario = prompt("Usuario:");
+				contrasena = prompt("Contraseña:");
+				
+				acceso = (usuario == "Daniel" && contrasena == "1234") || (usuario == "Mj" && contrasena == "5678") ;
+			
+			 } while (!acceso);
+			
+			
+		</script>
+		
+	</head>
+	<body>
+	
+	<script>
+	
+		// se ejecuta si lo que contiene la var acceso es true
+		
+		if(acceso) {
+			document.write("<h3 class=\"verde\">Bienvenido</h3>");
+		}
+		
+		// plantea la situación contraria del if al que acompaña
+		
+		// if(!acceso) {
+		
+		else {
+			document.write("<h3 class=\"rojo\">Acceso denegado</h3>");
+		}
+		
+		// vamos a plantear diferentes casos con el comando case
+
+			
+		switch (usuario+contrasena){
+			
+			
+				case "Daniel1234":
+					document.write("<p>Bienvenido al curso!</p>");
+					
+				break;
+			
+				case "Mj5678":
+					document.write("<p>Bienvenida al curso!</p>");
+				break;
+				
+				default:
+				document.write("<p>Datos incorrectos!</p>");
+				break;
+			}
+			
+	</script>
+	
+	
+	</body>
+</html>
