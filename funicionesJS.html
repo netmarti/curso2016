@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Funciones JS</title>
+		<meta charset="utf-8">
+		
+		<script>
+			//Funciones en JavaScript
+			
+			function rojo() {
+				alert("Has apretado el botón rojo");
+			}
+			
+			function verde() {
+				alert("Has apretado el botón verde");
+			}
+			
+			function amarillo() {
+				alert("Has apretado el botón amarillo");	
+			}
+			
+			function aviso(color){
+				alert("Has apretado el botón"+color);
+			}
+			
+		</script>
+	</head>
+	
+	<body>
+	
+		<p>
+			<input type="button" value="Rojo" style="background-color:#f00;" onclick="aviso('rojo');">
+		</p>
+		
+		<p>
+			<input type="button" value="Amarillo" style="background-color:#ff0;" onclick="aviso('azul');">
+		</p>
+		
+		<p>
+			<input type="button" value="Verde" style="background-color:#0f0;" onclick="aviso('verde');">
+		</p>
+		
+		
+	
+	</body>
+	
+</html>
