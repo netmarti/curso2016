@@ -1,0 +1,83 @@
+/* estilos del formulario */
+
+body{
+	
+	font-family: tahoma, arial;
+	background:#ccc;
+	
+}
+
+.cajaForm {
+	width:900px;
+	background:#fff;
+	border:1px solid #999;
+	border-radius:10px;
+	margin:0 auto; 
+	
+}
+
+.col_1_3 {
+	
+	width:33.33%;
+	float:left;
+	padding:10px;
+	box-sizing:border-box;
+	
+}
+
+.col_1_1 {
+	
+	clear:left;
+	padding:10px;
+	box-sizing:border-box;
+}
+
+.cajaForm label, 
+.cajaForm input, 
+.cajaForm span, 
+.cajaForm textarea {
+	display:block;
+	width:100%;
+	box-sizing:border-box;
+	margin-bottom:6px;
+}
+
+.cajaForm label {
+	color:#666;
+	text-indent:7px;
+	
+}
+
+.cajaForm input[type="text"],
+.cajaForm input[type="email"],
+.cajaForm input[type="textarea"]{
+	border: 1px solid #999;
+	border-radius:5px;
+	padding:6px;
+	font-size:large;
+	font-family:tahoma, arial;
+}
+
+
+.cajaForm .error {
+	font-size:small;
+	color:#c00;
+}
+
+.cajaForm input[type="submit"] {
+	border: 1px solid #666;
+	border-radius:5px;
+	padding:6px;
+	background:#666;
+	color:#fff;
+	cursor:pointer;
+	transition:all 0.3s easy;
+	
+}
+
+.cajaForm input[type="submit"]:hover {
+	
+	background:#fff;
+	color:#000;
+	transition:;
+}
